@@ -16,10 +16,10 @@ jobs:
       with:
         cordova-version: 8
     - name: Build
-      run: ionic cordova build ios
+      run: ionic cordova build ios --prod
     - name: Upload app
       uses: actions/upload-artifact@v1
       with:
         name: app
-        path: app/build/outputs/apk/debug/app-debug.ipa        
+        path: platforms/ios/build/emulator/Ionic\ Conference\ App.app
         
