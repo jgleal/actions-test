@@ -16,4 +16,9 @@ jobs:
       with:
         cordova-version: 8
     - name: Build
-      run: ionic cordova build android --prod
+      run: ionic cordova build android
+    - name: Upload app
+      uses: actions/upload-artifact@v1
+      with:
+        name: app
+        path: app/build/outputs/apk/debug/app-debug.apk
