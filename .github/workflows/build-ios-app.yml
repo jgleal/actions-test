@@ -17,8 +17,9 @@ jobs:
         cordova-version: 8
     - name: Build
       run: |
-          npm install -g native-run
-          ionic cordova run ios
+          ionic cordova prepare ios
+          cd platforms/ios
+          xcodebuild clean test -project Ionic Conference App.xcodeproj -scheme Ionic Conference App -destination "platform=iOS Simulator,name=iPhone 11 Pro"
     - name: Upload app
       uses: actions/upload-artifact@v1
       with:
