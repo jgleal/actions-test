@@ -17,6 +17,7 @@ jobs:
         cordova-version: 8
     - name: Build
       run: |
+          npm install -g native-run
           ionic cordova run ios
     - name: Upload app
       uses: actions/upload-artifact@v1
