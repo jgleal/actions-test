@@ -17,6 +17,7 @@ jobs:
         cordova-version: 8
     - name: Build
       run: |
+          ionic cordova platform add ios
           ionic cordova prepare ios
           cd platforms/ios
           xcodebuild clean test -project Ionic Conference App.xcodeproj -scheme Ionic Conference App -destination "platform=iOS Simulator,name=iPhone 11 Pro"
