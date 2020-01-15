@@ -14,7 +14,7 @@ This application is purely a kitchen-sink demo of the Ionic Framework and Angula
   - [Android](#android)
   - [iOS](#ios)
 
-
+a
 ## Getting Started
 
 * [Download the installer](https://nodejs.org/) for Node.js 6 or greater.
